@@ -1,0 +1,9 @@
+<aspectj>
+<aspects>
+<aspect name="org.nacfuk.membermgt.PersonDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="org.nacfuk.membermgt.PersonIntegrationTest_Roo_Configurable"/>
+<aspect name="org.nacfuk.membermgt.PersonDataOnDemand_Roo_Configurable"/>
+<aspect name="org.nacfuk.membermgt.PersonIntegrationTest_Roo_IntegrationTest"/>
+</aspects>
+</aspectj>
+

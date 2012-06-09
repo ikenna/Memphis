@@ -1,0 +1,18 @@
+<aspectj>
+<aspects>
+<aspect name="org.nacfuk.membermgt.model.Name_Roo_Configurable"/>
+<aspect name="org.nacfuk.membermgt.model.Person_Roo_Jpa_ActiveRecord"/>
+<aspect name="org.nacfuk.membermgt.model.Address_Roo_Jpa_ActiveRecord"/>
+<aspect name="org.nacfuk.membermgt.model.Name_Roo_Jpa_Entity"/>
+<aspect name="org.nacfuk.membermgt.model.Address_Roo_Configurable"/>
+<aspect name="org.nacfuk.membermgt.model.Address_Roo_ToString"/>
+<aspect name="org.nacfuk.membermgt.model.Person_Roo_Jpa_Entity"/>
+<aspect name="org.nacfuk.membermgt.model.Person_Roo_Configurable"/>
+<aspect name="org.nacfuk.membermgt.model.Name_Roo_Jpa_ActiveRecord"/>
+<aspect name="org.nacfuk.membermgt.model.Name_Roo_JavaBean"/>
+<aspect name="org.nacfuk.membermgt.model.Address_Roo_Jpa_Entity"/>
+<aspect name="org.nacfuk.membermgt.model.Address_Roo_JavaBean"/>
+<aspect name="org.nacfuk.membermgt.model.Person_Roo_ToString"/>
+</aspects>
+</aspectj>
+
