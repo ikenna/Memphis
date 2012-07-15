@@ -1,6 +1,5 @@
 *.class
-
-log.roo
+target
 
 # ide files #
 *.ipr
