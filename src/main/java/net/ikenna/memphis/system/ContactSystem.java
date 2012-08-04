@@ -4,6 +4,8 @@ package net.ikenna.memphis.system;
 import net.ikenna.memphis.model.Contact;
 import net.ikenna.memphis.model.SearchResults;
 
+import java.util.List;
+
 public class ContactSystem {
 
     public Database database = new CSVDatabase();
@@ -31,6 +33,10 @@ public class ContactSystem {
         for (Contact contact : contacts) {
             addContact(contact);
         }
+    }
+
+    public List<Contact> getAllContacts() {
+        return database.getAllContacts();
     }
 }
 

@@ -1,0 +1,5 @@
+
+1. Ability to store member contacts in database.
+2. Can send text and email to members
+3. Build web interface
+4. Deploy to a web host

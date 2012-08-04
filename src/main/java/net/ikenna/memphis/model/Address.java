@@ -8,10 +8,6 @@ public class Address {
         this.residentialAddress = residentialAddress;
     }
 
-    public String index() {
-        return String.format(" %s ", residentialAddress);
-    }
-
     @Override
     public String toString() {
         return residentialAddress;

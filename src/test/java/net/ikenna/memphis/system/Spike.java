@@ -14,7 +14,7 @@ public class Spike {
        try {
            service.send("Hello, World!", dummyPhone);
        } catch (Exception ex) {
-           System.out.println(" :-( " + ex);
+           System.out.println(" :-( " + ex);     hj
        }
    }
 

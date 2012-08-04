@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.File;
+import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
@@ -63,5 +64,18 @@ public class ApplicationTest {
         searchResults = application.searchForContact("Bishop");
         assertThat(searchResults.size(), is(1));
         assertThat(searchResults.get(0).getName().getLast(), is("Abatan"));
+    }
+
+    @Test
+    public void testListAllContacts() throws Exception {
+        Contact contact1 = application.getContactBuilder().firstName("Ikenna").lastName("Nwaiwu").createContact();
+        Contact contact2 = application.getContactBuilder().firstName("Gbenga").lastName("Abatan").residentialAddress("No 5 Bishop crescent").createContact();
+        application.getContactSystem().addContacts(contact1, contact2);
+
+        List<Contact> contactList = application.getContactSystem().getAllContacts();
+
+        assertThat(contactList.size(), is(2));
+
+
     }
 }
