@@ -13,7 +13,7 @@ import java.util.List;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-public class ApplicationTest {
+public class ContactSystemTest {
 
     public Application application;
 
@@ -21,6 +21,7 @@ public class ApplicationTest {
     public void setUp() throws Exception {
         application = new Application();
         FileUtils.deleteQuietly(new File("members.csv"));
+        MyMongo.INSTANCE.mongo.dropDatabase(MongoFields.nacf_db.name());
     }
 
     @Test

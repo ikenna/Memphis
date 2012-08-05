@@ -6,6 +6,7 @@ import net.ikenna.memphis.model.SearchResults;
 public class Application {
 
     private ContactSystem contactSystem = new ContactSystem();
+    private TextSystem textSystem = new TextSystem();
 
     public ContactBuilder getContactBuilder() {
         return new ContactBuilder();
@@ -26,5 +27,9 @@ public class Application {
 
     public ContactSystem getContactSystem() {
         return contactSystem;
+    }
+
+    public TextSystem getTextSystem() {
+        return textSystem;
     }
 }

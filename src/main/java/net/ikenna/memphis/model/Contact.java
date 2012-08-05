@@ -1,6 +1,8 @@
 package net.ikenna.memphis.model;
 
-public class Contact {
+import com.google.common.collect.ComparisonChain;
+
+public class Contact implements Comparable<Contact> {
     private final Name name;
     private final PhoneEmail phoneEmail;
     private final Address address;
@@ -32,5 +34,14 @@ public class Contact {
                 ", phoneEmail=" + phoneEmail +
                 ", address=" + address +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Contact other) {
+        return ComparisonChain.start()
+                .compare(name.getFirst(), other.getName().getFirst())
+                .compare(name.getLast(), other.getName().getLast())
+                .compare(phoneEmail.getMobile(), other.phoneEmail.getMobile())
+                .result();
     }
 }

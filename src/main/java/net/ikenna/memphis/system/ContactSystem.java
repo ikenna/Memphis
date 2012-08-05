@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ContactSystem {
 
-    public Database database = new CSVDatabase();
+    public Database database = new MongoDatabase();
 
     public int getTotalNumberOfContacts() {
         return database.getAllContacts().size();
@@ -25,7 +25,7 @@ public class ContactSystem {
     }
 
     public SearchResults searchForContact(String searchQuery) {
-        return database.searchForContacts(searchQuery);
+        return database.searchForContacts(new SearchQuery(searchQuery));
     }
 
 

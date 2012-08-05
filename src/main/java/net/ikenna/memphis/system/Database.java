@@ -10,5 +10,5 @@ interface Database {
 
     void add(Contact contact);
 
-    SearchResults searchForContacts(String searchQuery);
+    SearchResults searchForContacts(SearchQuery searchQuery);
 }

@@ -52,12 +52,12 @@ class CSVDatabase implements Database {
     }
 
     @Override
-    public SearchResults searchForContacts(String searchQuery) {
+    public SearchResults searchForContacts(SearchQuery searchQuery) {
         SearchResults results = new SearchResults();
         for (CsvRecord csvRecord : getCsvRecords()) {
             List<String> strings = Arrays.asList(csvRecord.getEntries());
             for (String string : strings) {
-                if (string.contains(searchQuery)) {
+                if (string.contains(searchQuery.toString())) {
                     Contact contact = createContactFromCsvRecord(csvRecord);
                     results.add(contact);
                 }
